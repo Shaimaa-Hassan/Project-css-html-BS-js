@@ -1,0 +1,120 @@
+/* 1.global style  */
+/* 2.common style */
+/* general style.............................................................................. */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* small screen */
+@media (min-width:768px){
+    .container {
+        width: 750px;
+    }
+}
+/* medium screen */
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+/* large screen */
+@media (min-width:1200px){
+    .container{
+        width: 1170px;
+
+    }
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* :root{ */
+    /* --main-color:; */
+    /* --main-transition:; */
+    /* --section-padding:; */
+    /* --bg-color:; */
+/* } */
+.heart{
+    /* border: 2px solid red; */
+    animation-name: change;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    position: fixed;
+    top: 0;
+
+    /* animation: change 2s 1 linear forwards; */
+}
+@keyframes change{
+    0%{transform: translateY( -5vh);}
+    
+    100%{transform: translateY( 110vh);}
+}
+/* //////////////////////////////////////////////////////////////////////hearts */
+.content{
+    height: 0;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.active{
+    /* height: 160px; */
+    opacity: 1;
+}
+.plus{
+    cursor: pointer;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////// */
+.container-clock{
+    background-color: royalblue;
+    transition: all 0.5s;
+}
+.container-clock:hover{
+    box-shadow: 5px 5px 25px steelblue;
+    width:230px !important;
+}
+/* /////////////////////////////////////////////////////////// */
+#pre:disabled, #next:disabled{
+opacity: 0.4;
+cursor: not-allowed;
+}
+/* //////////////////////////////////////////////////////// */
+#movie, #quote{
+    animation-name: mymovie;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+
+}
+@keyframes mymovie {
+    0%{transform: translateX(50vw)}/*(vw)view width in x axise (vh)view height in y axis */
+    100%{transform: translate(0)};
+}
+/* ///////////////////////////////////////////////////////////////////// */
+.sidekick {
+    position: relative;
+    padding-left: 1em;
+    border-left: 0.2em solid #039be5;
+    font-family: 'Roboto', serif;
+    font-size: 2.4em;
+    line-height: 1.5em;
+    font-weight: 400;
+  }
+  .sidekick:before, .sidekick:after {
+    font-family: Calibri;
+      color: #039be5;
+      font-size: 34px;
+  }
+  .sidekick:before {content: '\201e'}
+  .sidekick:after {content: '\201c';}
+  .sidekick cite {font-size: 50%; text-align:center; top:50%}
+  .sidekick cite:before {content: ' \2015 '}
