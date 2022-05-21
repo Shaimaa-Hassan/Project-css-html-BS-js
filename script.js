@@ -1,7 +1,6 @@
 
-var randomHearts = document.getElementById("random-hearts");
 var container = document.querySelector(".container");
-randomHearts.addEventListener("click",function() {
+const randomHearts=()=> {
     const parentHeart = document.createElement("div");
     container.append(parentHeart);
     const createRandomHearts = setInterval(function(){
@@ -36,4 +35,12 @@ setTimeout(function() {
 setTimeout(function(){
       parentHeart.remove(); 
 }, 5000);
-});
+};
+
+
+
+
+
+randomhearts.addEventListener("click", (eo) => {
+    randomHearts()
+  });

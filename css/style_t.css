@@ -25,6 +25,54 @@
 
     }
 }
+@media (max-width:900px){
+    h2{
+        font-size: 15px !important;
+        width: 200px !important;
+    }
+    .slider-container{
+        width: 300px !important;
+        height: 300px !important;
+    }
+    .slider-container img{
+        width: 300px !important;
+        height: 200px !important;
+    }
+    .num-container{
+        flex-direction: column;
+    }
+    .container .content{
+        font-size: 14px !important;
+    }
+    iframe{
+        width: 200px !important;
+        height: 200px !important;
+    }
+   .dpn{
+       display: none;
+   }
+   .date, .time{
+       font-size: 12px !important;
+
+   }
+   .container-clock{
+    width: 200px !important;
+
+   }
+   .headerbox1>ul{
+       flex-direction: column;
+       align-items: center !important;
+       justify-content: center !important;
+
+   }
+   .headerbox1>ul>li{
+       margin: 10px 0;
+   }
+   .sidekick{
+    font-size: 15px !important;
+   }
+}
+/* //////////////////////////////////////////////// */
 body{
     font-family: 'Work Sans', sans-serif;
 }
@@ -99,7 +147,7 @@ cursor: not-allowed;
     0%{transform: translateX(50vw)}/*(vw)view width in x axise (vh)view height in y axis */
     100%{transform: translate(0)};
 }
-/* ///////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////quote */
 .sidekick {
     position: relative;
     padding-left: 1em;
@@ -118,3 +166,46 @@ cursor: not-allowed;
   .sidekick:after {content: '\201c';}
   .sidekick cite {font-size: 50%; text-align:center; top:50%}
   .sidekick cite:before {content: ' \2015 '}
+  /* //////////////////////////////////////////////toggle tabs */
+  .btnhov{
+      /* transform: scale(1); */
+      padding: 0;
+      transition: 0.5s !important;
+  }
+  .btnhov:hover{
+      /* transform: scale(1.2); */
+      padding: 10px;
+      font-size: 20px !important;
+  }
+  .listbefo1, .listbefo2, .listbefo3, .listbefo4, .listbefo5{
+      position: relative;
+      margin-bottom: 10px;
+  }
+  .listbefo1::before, .listbefo2::before, .listbefo3::before, .listbefo4::before, .listbefo5::before{
+      position: absolute;
+      width: 25px;
+      background-color:salmon;
+      border-radius: 8px;
+      z-index: -1;
+      left:-30px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    /* padding-bottom: 30px; */
+
+  }
+ .listbefo1::before{
+     content: "1";
+ }
+ .listbefo2::before{
+    content: "2";
+}
+.listbefo3::before{
+    content: "3";
+}
+.listbefo4::before{
+    content: "4";
+}
+.listbefo5::before{
+    content: "5";
+}

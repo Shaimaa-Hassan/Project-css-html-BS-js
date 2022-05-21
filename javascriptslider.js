@@ -7,19 +7,18 @@ const arr = [
 ];
 let i=0;
 sliderContainer.innerHTML += arr[i];
-sliderContainer.innerHTML += `<p class="position-absolute mt-3 ms-3 p-1 bg-info text-white fs-5">slider#${i+1} of ${arr.length} slids</p>`
-
 pre.setAttribute("disabled","");
+sliderContainer.innerHTML += `<p class="dpn position-absolute mt-3 ms-3 p-1 bg-info text-white fs-5">slider#${i+1} of ${arr.length} slids</p>`
+
 
 next.addEventListener("click", (e)=>{
     pre.removeAttribute("disabled");
 i++;
 
 sliderContainer.innerHTML += arr[i];
-sliderContainer.innerHTML += `<p class="position-absolute mt-3 ms-3 p-1 bg-info text-white fs-5">slider#${i+1} of ${arr.length} slids</p>`
+sliderContainer.innerHTML += `<p class="dpn position-absolute mt-3 ms-3 p-1 bg-info text-white fs-5">slider#${i+1} of ${arr.length} slids</p>`
 if(i == arr.length-1){
     next.setAttribute("disabled", "");
-    pre.removeAttribute("disabled");
 }
 parentnumber.getElementsByClassName("btn-primary")[0].classList.remove("text-white", "btn-primary");
 parentnumber.getElementsByTagName("button")[i].classList.add("text-white", "btn-primary");
@@ -29,7 +28,7 @@ pre.addEventListener("click", ()=>{
     next.removeAttribute("disabled");
     i--;
     sliderContainer.innerHTML += arr[i];
-    sliderContainer.innerHTML += `<p class="position-absolute mt-3 ms-3 p-1 bg-info text-white fs-5">slider#${i+1} of ${arr.length} slids</p>`
+    sliderContainer.innerHTML += `<p class="dpn position-absolute mt-3 ms-3 p-1 bg-info text-white fs-5">slider#${i+1} of ${arr.length} slids</p>`
     if(i == 0){
         pre.setAttribute("disabled", "");
     }
@@ -45,10 +44,12 @@ allnaviu.forEach((item, index)=>{//for that takes each numbered button and it's 
         item.classList.add("text-white", "btn-primary");//add to clicked numbered button this two classes 
         sliderContainer.innerHTML += arr[index];//add images which the index of array equal to the index to the numbered button
         sliderContainer.innerHTML += `<p class="position-absolute mt-3 ms-3 p-1 bg-info text-white fs-5">slider#${index+1} of ${arr.length} slids</p>`//add slide number and text
+        
+        i=index;
+
         if(index == arr.length-1){
             next.setAttribute("disabled", "");
             pre.removeAttribute("disabled");
-            i=index;
         }
         else if(index == 0){
             pre.setAttribute("disabled", "");

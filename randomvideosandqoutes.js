@@ -21,6 +21,7 @@ btnv.addEventListener("click", (e)=>{
     //     h++;
     // }//veiw vedios in ordered
     movieParent.innerHTML=arrvedio[Math.floor(Math.random()*(arrvedio.length))];
+    randomHearts();
 });
 //////////////////////////////////////////////////////////////////////////////////////
 var quoteParent =document.querySelector(".quoteParent");
@@ -47,4 +48,5 @@ btnq.addEventListener("click", (e)=>{
     //     index++;
     // }//veiw vedios in ordered
     quoteParent.innerHTML=arrquote[Math.floor(Math.random()*(arrquote.length))];
+    randomHearts();
 });
