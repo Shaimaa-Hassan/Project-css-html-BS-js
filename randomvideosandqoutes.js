@@ -8,7 +8,7 @@ var arrvedio =[
     `<iframe id="movie" class="border rounded border-secondary border-2" width="640" height="380" src="https://www.youtube.com/embed/jA14r2ujQ7s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
     `<iframe id="movie" class="border rounded border-secondary border-2" width="640" height="380" src="https://www.youtube.com/embed/PS-uywnnzWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
     `<iframe id="movie" class="border rounded border-secondary border-2" width="640" height="380" src="https://www.youtube.com/embed/4Yz6y17dSJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-    `<iframe id="movie" class="border rounded border-secondary border-2" width="640" src="https://www.youtube.com/embed/wrXnQXyF2IQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+    `<iframe id="movie" class="border rounded border-secondary border-2" width="640" height="380" src="https://www.youtube.com/embed/wrXnQXyF2IQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
 
 
 ];
